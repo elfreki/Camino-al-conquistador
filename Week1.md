@@ -1,6 +1,6 @@
 # Week-1 : Lab Setup and basics
 
-**( Timeline : 27<sup>th</sup> May'19 - 2<sup>th</sup> June'19 )**
+**( Timeline : 06<sup>th</sup> July'20 - 12<sup>th</sup> July'20 )**
  
 1. Bascis of SSH and SSH tunnelling,  SCP , SFTP.
 
