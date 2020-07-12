@@ -1,0 +1,5 @@
+ssh -R localport:127.0.0.1:remoteport root@localip
+
+localport is the port on our local machine.
+remoteport is the port on remote machine which is to be forwarded to local machine.
+localip is the ip of the local machine.
