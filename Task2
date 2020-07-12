@@ -1,2 +1,0 @@
-ssh username@remoteip command_to_be_executed
-Ex: ssh root@10.10.10.10 whoami
