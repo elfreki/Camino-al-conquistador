@@ -1,0 +1,18 @@
+#General script for setting up variable 
+
+export VAR="value" 
+
+# HTTP PROXY
+
+export http_proxy=username:password@http_proxy_ip:port
+
+#Ex- user:1234@10.10.10.10:8080
+
+# HTTPS PROXY
+
+export https_proxy=username:password@https_proxy_ip:port
+
+# ALL PROXY
+
+export all_proxy=username:password@https_proxy_ip:port
+
