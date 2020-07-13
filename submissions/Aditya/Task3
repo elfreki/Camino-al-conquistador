@@ -1,0 +1,1 @@
+scp -r foldername root@10.10.10.110:/week1/ 

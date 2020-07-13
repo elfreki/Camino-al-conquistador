@@ -1,0 +1,42 @@
+#!/bin/bash
+
+reverse(){
+   ssh -R $1:127.0.0.1:61234 root@$2
+}
+remcom(){
+   ssh root@$1 $2
+}
+Scp(){
+   scp -r $2 root@$1:/week-1/
+}
+Sftp(){
+   sftp root@$1
+}
+proxy(){
+   echo  "http_proxy=$1:$2" >> /etc/environment
+   echo  "https_proxy=$1:$2" >> /etc/environment
+}
+      
+if [ $# -lt 1 ]; then
+   echo "Usage:"
+   echo "./script num"
+   echo -e "Num:\n1:For Reverse Tunneling\n2:For Remote Command Execution using ssh\n3:Run the copy command\n4:Establish sftp connection\n5:Set Proxy"
+   echo "Reverse Tunneling: ./script 1 localip localport"
+   echo "Remote Command Execution: ./script 2 remoteip command"
+   echo "Copy Command: ./script 3 remoteip foldername"
+   echo "SFTP: ./script 4 remoteip"
+   echo "Set Proxy: ./script 5 ip port"
+fi    
+
+if [ "$1" = "1" ]; then
+   reverse $2 $3
+elif [ "$1" = "2" ]; then
+   remcom $2 $3
+elif [ "$1" = "3" ]; then
+   Scp $2 $3
+elif [ "$1" = "4" ]; then
+   Sftp $2
+elif [ "$1" = "5" ];then
+   proxy $2 $3
+fi
+            

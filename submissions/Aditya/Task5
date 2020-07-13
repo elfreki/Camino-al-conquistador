@@ -1,0 +1,11 @@
+For HTTP
+
+export HTTP_PROXY=username:password@proxy_server_ip:proxy_server_port
+
+For HTTPS
+
+export HTTPS_PROXY=username:password@proxy_server_ip:proxy_server_port
+
+If there is no username and password set to the proxy server then skip the username and password part
+Ex: export HTTP_PROXY=127.0.0.1:8080
+
