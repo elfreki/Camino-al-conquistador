@@ -1,0 +1,3 @@
+ssh -R localport:localhost:remoteport username@ip_address
+
+#Ex- ssh -R 19001:localhost:22 user@192.168.57.2
