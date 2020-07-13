@@ -1,6 +1,6 @@
 # Week-2 : Basic Shell scripting ( Sed and Awk )
 
-**( Timeline : 14<sup>th</sup> May'18 - 19<sup>th</sup> May'18 )**
+**( Timeline : 14<sup>th</sup> July'20 - 20<sup>th</sup> July'20 )**
  
  **All the below actions are to be performed on given access.log file**
 
