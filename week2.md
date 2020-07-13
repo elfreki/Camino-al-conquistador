@@ -38,7 +38,7 @@ G/V	| Gif/Video	|
 
 1. Output of each code should be attached or screenshot.
 2. A few more tasks may be added later.
-3. Download the access.log [here](https://github.com/M1doriya/noob-to-pro/files/1998729/access.log)
+3. Download the access.log [here](https://github.com/elfreki/Camino-al-conquistador/blob/master/Files/access.log)
 
 
 
