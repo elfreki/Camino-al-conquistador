@@ -1,0 +1,8 @@
+Task1 : sed -n '/Chrome/!p' access.log
+Task2 : sed -n '/POST/p' access.log
+Task3 : awk '{gsub(/\[/,"",$4);printf $1","$4","$7","; for(i=12;i<=NF;i++) printf $i;print "\n"}' access.log
+Task4 : awk 'NR>=20&&NR<=33{gsub(/\[/,"",$4);printf $1","$4","$7","; for(i=12;i<=NF;i++) printf $i;print "\n"}' access.log
+Task6 : awk 'NR>=189 && NR<=222 { print $0 }' access.log
+Task7 : awk 'END{print NR}' access.log
+Task8 : awk '{print $10}' access.log
+Task9 : awk 'BEGIN{sum=0}{if(NR>=6 && NR <=8) sum+=$10}END{print sum}' access.log
