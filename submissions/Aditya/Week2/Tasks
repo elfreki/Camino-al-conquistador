@@ -1,7 +1,8 @@
 Task1 : sed -n '/Chrome/!p' access.log
 Task2 : sed -n '/POST/p' access.log
-Task3 : awk '{gsub(/\[/,"",$4);printf $1","$4","$7","; for(i=12;i<=NF;i++) printf $i;print "\n"}' access.log
+Task3 : awk  '$9 == 404 {gsub(/\[/,"",$4);printf $1","$4","$7","; for(i=12;i<=NF;i++) printf $i;print "";}' access.log > file.csv
 Task4 : awk 'NR>=20&&NR<=33{gsub(/\[/,"",$4);printf $1","$4","$7","; for(i=12;i<=NF;i++) printf $i;print "\n"}' access.log
+Task5 : awk '/Chrome/{gsub(/\[/,"",$4);if($9 == "404") {printf $1","$4","$7","; for(i=12;i<=NF;i++) printf $i;print ""}}' access.log > file.csv
 Task6 : awk 'NR>=189 && NR<=222 { print $0 }' access.log
 Task7 : awk 'END{print NR}' access.log
 Task8 : awk '{print $10}' access.log
