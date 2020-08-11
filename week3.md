@@ -12,10 +12,6 @@
 || **TOTAL** 	| **400**	|
 
 
-1: 
-
-For this you may need to use a **combination of different zomato apis endpoints**, like some api endpoints would fetch you the restaurants in an area, others would fetch you the ratings etc.
-
 
 
 Index	|	|
